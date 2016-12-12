@@ -1,15 +1,25 @@
 <!doctype html>
-<html lang="en" ng-app="phonecatApp">
+<html ng-app="phonecatApp">
   <head>
     <meta charset="utf-8">
     <title>Google Phone Gallery</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="app.css" />
     <link rel="stylesheet" href="app.animations.css" />
-    <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
-  </head>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="app.module.js"></script> 
+    <script src="app.config.js"></script>
+    <script src="phone-test/phone-test.module.js"></script>
+    <script src="phone-test/phone-test.component.js"></script>  
+    <script src="phone-detail/phone-detail.module.js"></script>
+    <script src="phone-detail/phone-detail.component.js"></script>  
+    <script src="core/core.module.js"></script>
+    <script src="core/checkmark/checkmark.filter.js"></script>
+  </head>  
   <body>
-    
+        <!-- <phone-list></phone-list> -->
+        <!-- <phone-test></phone-test>   --> 
+        <div ng-view></div>
   </body>
 </html>
