@@ -1,4 +1,4 @@
 'use strict';
 
 // Define the `phoneTest` module
-angular.module('phoneTest', []);  
+angular.module('phoneTest', ['core.phone']);  
